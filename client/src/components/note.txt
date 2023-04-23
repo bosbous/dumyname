@@ -1,0 +1,19 @@
+i have a node function that send error if the user try to register with name that already exist i am trying to register with name that already exist but its running the code that exist inside try block not inside catch bloc
+
+   try {
+      const response = await addUser(formData);
+      console.log("Response:", response);
+      setName("");
+      setPassword("");
+      setEmail("");
+    } catch (error) {
+      console.log("Error creating user:", error.message);
+    }
+
+
+
+
+
+12345678
+
+i am using rtq query to register a user but when there is error its running the code inside the try 
